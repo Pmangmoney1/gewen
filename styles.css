@@ -83,6 +83,14 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
+    text-align: left; /* 기본 좌측 정렬 */
+}
+
+/* 화면 너비가 768px 이하일 때 컨테이너 중앙 정렬 */
+@media screen and (max-width: 768px) {
+    .container {
+        text-align: center; /* 중앙 정렬 */
+    }
 }
 
 /* 메인 배너 스타일 */
@@ -106,9 +114,19 @@ body {
     white-space: nowrap;
 }
 
+/* 화면 너비가 1200px 이하일 때 메인 배너 제목 스타일 */
 @media screen and (max-width: 1200px) {
     .main-banner h2 {
         font-size: 2em;
+    }
+}
+
+/* 화면 너비가 768px 이하일 때 메인 배너 제목 스타일 */
+@media screen and (max-width: 768px) {
+    .main-banner h2 {
+        font-size: 1.5em; /* 글씨 크기를 더 작게 조정 */
+        white-space: normal; /* 줄바꿈 허용 */
+        text-align: center; /* 중앙 정렬 */
     }
 }
 
@@ -174,6 +192,13 @@ body {
     width: 100%;
     max-width: 600px;
     text-align: left;
+}
+
+/* 화면 너비가 768px 이하일 때 섹션 콘텐츠 텍스트 중앙 정렬 */
+@media screen and (max-width: 768px) {
+    .section-content .text-content {
+        text-align: center; /* 중앙 정렬 */
+    }
 }
 
 /* 섹션 제목 스타일 */
